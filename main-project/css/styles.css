@@ -2,10 +2,35 @@
 /***************** IMPORTS *********************/
 /***********************************************/
 
+/* Red Hat Display Font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 /***********************************************/
 /***************** VARIABLES *******************/
 /***********************************************/
+:root {
+
+
+
+/********** TYPOGRAPHY ****************/
+
+/* Fonts */
+--red-hat-display: 'Red Hat Display', sans-serif;
+
+/* Font Weights; */
+--font-weight-medium: 500;
+--font-weight-bold: 700;
+--font-weight-black: 900; 
+
+}
+
+/***********************************************/
+/******************* GLOBAL ********************/
+/***********************************************/
+
+body {
+  font-family: var(--red-hat-display);
+}
 
 #main-container {
   width: 375px;
