@@ -10,17 +10,34 @@
 /***********************************************/
 :root {
 
+  /************** COLORS ******************/
 
+  /* Background Colors */
+  --main-background-color: #fafafa;
+  --white: #fff;
+  --color-aqua: #4D96A9;
+  --color-light-aqua: #8FE3F9;
+  --color-aqua-active: #71C0D4;
+  --color-purple: #855FB1;
+  --color-light-purple: #D9B8FF;
+  --color-purple-active: #B18BDD;
+  --color-gray: #87879D;
+  --color-light-gray: #87879D;
 
-/********** TYPOGRAPHY ****************/
+  /* Font Colors */
+  --font-color-dark: #28283D;
+  --font-color-light: #87879D;
+  
 
-/* Fonts */
---red-hat-display: 'Red Hat Display', sans-serif;
+  /************ TYPOGRAPHY ****************/
 
-/* Font Weights; */
---font-weight-medium: 500;
---font-weight-bold: 700;
---font-weight-black: 900; 
+  /* Fonts */
+  --red-hat-display: 'Red Hat Display', sans-serif;
+
+  /* Font Weights; */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
 
 }
 
@@ -29,6 +46,7 @@
 /***********************************************/
 
 body {
+  background-color: var(--main-background-color);
   font-family: var(--red-hat-display);
 }
 
