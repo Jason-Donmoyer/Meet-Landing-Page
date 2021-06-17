@@ -14,7 +14,7 @@
 
   /* Background Colors */
   --main-background-color: #fafafa;
-  --white: #fff;
+  --color-white: #fff;
   --color-aqua: #4D96A9;
   --color-light-aqua: #8FE3F9;
   --color-aqua-active: #71C0D4;
@@ -39,6 +39,11 @@
   --font-weight-bold: 700;
   --font-weight-black: 900;
 
+  /* Font Size */
+  --main-font-size: 16px;
+  --headline-one-font-size: 40px;
+  --headline-two-font-size: 32px;
+  --large-paragraph-font-size: 18px;
 }
 
 /***********************************************/
@@ -50,13 +55,104 @@ body {
   font-family: var(--red-hat-display);
 }
 
+h1 {
+  font-size: var(--headline-one-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: 44px;
+}
+
 #main-container {
   width: 375px;
   height: 2215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
+
+/************ BUTTONS ****************/
+
+button {
+  padding: 16px;
+  height: 58px;
+  border-radius: 29px;
+  color: var(--color-white);
+  font-weight: var(--font-weight-black);
+  line-height: 26px;
+  border: none;
+}
+
+/***********************************************/
+/******************* UNIQUE ********************/
+/***********************************************/
+
+
+/************ LOGO and HERO ****************/
 
 #logo {
   height: 28px;
   width: 119px;
   background-image: url(../assets/logo.svg);
+  margin: 48px auto;
+}
+
+#hero {
+  height: 153px;
+  width: 414px;
+  background-image: url(../assets/tablet/image-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 54px -19px 48px -20px;
+}
+
+
+/************ MAIN INFO ****************/
+
+
+#main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-info h1 {
+  color: var(--font-color-dark);
+  text-align: center;
+}
+
+#main-info p {
+  color: var(--font-color-light);
+  line-height: 26px;
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  margin: 24px 24px 32px 24px;
+}
+
+/************ SELECTION ****************/
+
+#selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Download Btn */
+.download-btn {
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: var(--color-aqua);
+  margin-bottom: 16px;
+}
+
+.download-btn span {
+  color: var(--color-light-aqua);
+  margin-left: 4px;
+}
+
+/* What Is It Btn */
+.what-is-it-btn {
+  background-color: var(--color-purple);
+  padding-left: 29px;
+  padding-right: 29px;
 }
