@@ -13,7 +13,7 @@
   /************** COLORS ******************/
 
   /* Background Colors */
-  --main-background-color: #fafafa;
+  --main-background-color: #FAFAFA;
   --color-white: #fff;
   --color-aqua: #4D96A9;
   --color-light-aqua: #8FE3F9;
@@ -22,6 +22,7 @@
   --color-light-purple: #D9B8FF;
   --color-purple-active: #B18BDD;
   --color-gray: #87879D;
+  --color-medium-gray: #D8D8D8;
   --color-light-gray: #87879D;
 
   /* Font Colors */
@@ -155,4 +156,68 @@ button {
   background-color: var(--color-purple);
   padding-left: 29px;
   padding-right: 29px;
+}
+
+/************ NUMBER ICONS ****************/
+
+#number-one {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-line {
+  height: 84px;
+  border-left: 1px solid rgba(135, 135, 157, 0.25);
+  margin-bottom: -16px;
+}
+
+.number-design {
+  color: var(--font-color-light);
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  line-height: 56px;
+}
+
+/************ IMAGE GROUP ****************/
+
+
+#image-group {
+  width: 327px;
+  height: 310px;
+  margin: 64px 0 64px 24px;
+  display: grid;
+  grid-template-columns: 143px 143px;
+  grid-template-rows: 151px 151px;
+  grid-gap: 12px 25px;
+}
+
+/* Images Class */
+.image-group-image {
+  background-color: var(--color-medium-gray);
+  width: 151px;
+  height: 143px;
+  background-size: contain;
+  border-radius: 8px;
+}
+
+/* Images */
+#woman-img {
+  background-image: url(../assets/desktop/image-woman-in-videocall.jpg);
+}
+
+#women-img {
+  background-image: url(../assets/desktop/image-women-videochatting.jpg);
+}
+
+#men-in-meeting-img {
+  background-image: url(../assets/desktop/image-men-in-meeting.jpg);
+}
+
+#man-texting-img {
+  background-image: url(../assets/desktop/image-man-texting.jpg);
 }
