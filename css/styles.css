@@ -328,3 +328,19 @@ footer img {
 #footer-download-btn span {
   color: var(--color-light-purple);
 }
+
+/***********************************************/
+/************* MEDIA QUERIES *******************/
+/***********************************************/
+
+
+/******************* TABLET ********************/
+
+@media only screen and (min-width: 376px) {
+  
+/* LOGO */
+  #logo {
+    margin-bottom: 64px;
+  }
+
+}
