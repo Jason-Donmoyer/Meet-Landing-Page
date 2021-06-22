@@ -28,7 +28,7 @@
   /* Font Colors */
   --font-color-dark: #28283D;
   --font-color-light: #87879D;
-  
+
 
   /************ TYPOGRAPHY ****************/
 
@@ -89,6 +89,14 @@ button {
 /***********************************************/
 /******************* UNIQUE ********************/
 /***********************************************/
+
+
+/************ HEADER ****************/
+
+/* header {
+  display: flex;
+  flex-direction: column;
+} */
 
 
 /************ LOGO and HERO ****************/
@@ -263,13 +271,13 @@ article p {
 /************ FOOTER ****************/
 
 footer {
-   width: 375;
-   height: 540px;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   position: relative;
+  width: 375;
+  height: 540px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 #number-two {
@@ -337,10 +345,47 @@ footer img {
 /******************* TABLET ********************/
 
 @media only screen and (min-width: 376px) {
-  
-/* LOGO */
+
+  /* LOGO */
   #logo {
     margin-bottom: 64px;
   }
+
+  /* HERO */
+  #hero {
+    background-image: url(../assets/tablet/image-hero.png);
+    width: 820px;
+    height: 303px;
+    margin-left: -26px;
+    margin-right: -26px;
+    margin-bottom: 72px;
+    align-self: center;
+  }
+
+  /* MAIN INFO */
+  #main-info {
+    width: 457px;
+    height: 262px;
+  }
+
+  /* SELECTION CONTAINER */
+  #selection-container {
+    height: 58px;
+    width: 457px;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+  }
+
+  #main-info h1 {
+    font-weight: var(--font-weight-black);
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .download-btn {
+    margin-bottom: 0px;
+  }
+
 
 }
