@@ -122,19 +122,22 @@ button {
 
 /************ MAIN INFO ****************/
 
+#main-info-desktop {
+  display: none;
+}
 
-#main-info {
+.main-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#main-info h1 {
+.main-info h1 {
   color: var(--font-color-dark);
   text-align: center;
 }
 
-#main-info p {
+.main-info p {
   color: var(--font-color-light);
   line-height: 26px;
   text-align: center;
@@ -453,15 +456,27 @@ footer img {
 
 /******************* DESKTOP ********************/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
   #logo {
     margin-top: 80px;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  #main-info-device {
+    display: none;
+  }
+
+  #main-info-desktop {
+    display: flex;
   }
 
 }
 
 
 /***********************************************/
-/************* MACTIVE STATES ******************/
+/************* ACTIVE STATES ******************/
 /***********************************************/
